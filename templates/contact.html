@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}contact{% endblock title %}
+{% block body %}
+<div class='container-fluid px-5 my-5'>
+    <img src="static/Forte.png" class="d-block w-100" alt="..." height='300'>
+</div>
+<div class='container'>
+    <h2 class="text-center"> Feedback </h2>
+    <form method='post' action='/contact'>
+    {% csrf_token %}
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" name='email' id="email" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="desc">Detail</label>
+          <textarea class="form-control" name='desc' id="desc" rows="3"></textarea>
+        </div>
+        <button class='btn btn-primary' type='submit'>submit</button>
+      </form>
+</div>
+
+{% endblock body %} 

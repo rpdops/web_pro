@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    transition: 0.3s all ease-in-out;
+}
+
+body {
+    display: flex;
+    justify-content: flex-end; /* Align the form to the right */
+    align-items: center;
+    height: 100vh;
+    background-color: #d32f70;
+    background-image: url('/../static/loginimg.jpg');
+    background-size: 750px 580px; 
+    background-repeat: no-repeat;
+    background-position: left center; /* Align background image to the left */
+    font-size: 16px; /* Global font size increased */
+}
+
+.shadow-wrap {
+    border-radius: 5px;
+    padding: 25px;
+    background-color: #c23148;
+    backdrop-filter: blur(10px); /* Apply blur to the background of the shadow-wrap */
+}
+
+.form-wrap {
+    background-color: rgb(247,181,190); /* Semi-transparent white background */
+    padding: 10px; /* Adjusted padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 430px; /* Set consistent width */
+    min-height: 500px; /* Consistent height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center the form content */
+    backdrop-filter: blur(10px); /* Apply the blur effect */
+}
+
+.form-wrap form * {
+    display: block;
+    width: 100%;
+}
+
+.form-wrap form label {
+    margin-bottom: 5px;
+    font-size: 16px; /* Increased label font size */
+    font-weight: 700;
+    line-height: 13px;
+}
+
+.form-wrap form input {
+    padding: 12px 18px;
+    border-radius: 5px;
+    border: 1px solid #f5dae7;
+    background: #fbdbe4;
+    color: #eb1788;
+    font-size: 16px;
+}
+
+#id_username {
+    margin-bottom: 20px;
+}
+
+.form-wrap button {
+    border-radius: 5px;
+    background: #000000;
+    color: #FFF;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    padding: 12px 70px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    margin-top: 20px;
+    line-height: 22px;
+    transition: 0.3s background-color ease-in-out, 0.3s color ease-in-out, 0.3s border-color ease-in-out;
+}
+
+.form-wrap button:hover {
+    background-color: #fff;
+    color: #10182F;
+    border-color: #10182F;
+}
+
+.signup-link {
+    color: #10182F;
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 22px;
+    display: block;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+ul.errorlist li {
+    font-size: 14px;
+    color: #ff0000;
+    margin-bottom: 6px;
+}
